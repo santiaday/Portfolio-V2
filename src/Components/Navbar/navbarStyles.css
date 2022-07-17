@@ -1,0 +1,41 @@
+.navbarContainer {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: transparent;
+    user-select: none;
+    z-index: 90;
+    /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
+}
+
+.nameLeft {
+    text-decoration: none;
+    color: #282c34;
+    margin-left: 7rem;
+    font-weight: 500;
+  }
+  .namesRight {
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 7rem;
+    color: #282c34;
+
+  }
+
+  .namesRight ul {
+    display: flex;
+    padding: 0;
+  }
+  .namesRight li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  .namesRight li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    display: block;
+    width: 100%;
+  }

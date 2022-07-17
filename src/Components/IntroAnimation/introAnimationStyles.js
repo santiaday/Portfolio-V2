@@ -6,10 +6,12 @@ export default makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         height: '86vh',
+        backgroundColor: "#282c34"
     },
     introText: {
         color: '#FFFFFF',
         textAlign: "center",
-        fontWeight: "600 !important"
+        fontWeight: "600 !important",
+        backgroundColor: "#282c34"
     }
   }))

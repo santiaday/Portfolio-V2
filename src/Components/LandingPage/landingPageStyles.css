@@ -1,0 +1,80 @@
+.landingPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 101vh;
+    width: 101vw;
+    background: url(../../desktop2560.png) no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.welcomeMessage {
+    text-align: center;
+    font-size: 6.5rem;
+    font-weight: 500;
+    color: #282c34;
+    pointer-events: none;
+    transform: translateY(-100px);
+    background-color: transparent;
+    user-select: none;
+}
+
+.learnMoreButton {
+    position: absolute;
+    bottom: 250px;
+    background-color: transparent;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    background-color: var(--background-color);
+    color: #282c34;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #282c34;
+  
+    --background-color: #F4EAE3;
+    --border-size: 2px;
+    --accent-color: #282c34;
+  }
+
+.btn.btn-background-slide::before {
+    content: '' ;
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    bottom: 0 ;
+    right: 0 ;
+    z-index: -1 ;
+    background-color: var(--accent-color) ;
+  
+    transition: transform 300ms ease-in-out ;
+    transform: scaleX(0) ;
+    transform-origin: left ;
+  }
+  
+  .btn.btn-background-slide:hover::before,
+  .btn.btn-background-slide:focus::before {
+    transform: scaleX(1) ;
+  }
+  
+  .btn.btn-background-slide {
+    transition: color 300ms ease-in-out ;
+    z-index: 1 ;
+  }
+  
+  
+  .btn.btn-background-slide:hover,
+  .btn.btn-background-slide:focus {
+    color: #F4EAE3 ;
+  }
