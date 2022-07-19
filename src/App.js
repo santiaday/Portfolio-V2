@@ -4,6 +4,7 @@ import IntroAnimation from "./Components/IntroAnimation/IntroAnimation";
 import Navbar from "./Components/Navbar/Navbar";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import AboutMePage from "./Components/AboutMePage/AboutMePage"
+import ExperiencePage from "./Components/ExperiencePage/ExperiencePage"
 
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
@@ -36,6 +37,7 @@ function App() {
             <LandingPage />
 
             <AboutMePage />
+            <ExperiencePage />
     </ThemeProvider>
 
     // <section className="Parallax">

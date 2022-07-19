@@ -16,12 +16,13 @@ function IntroAnimation({ }) {
 
   const pop = () => {
     if (window.scrollY >= 125) {
+      setChangeBackground(true)
       document.getElementById("navContainer").classList.replace("colorBackgroundNavbarFadeOut" , "colorBackgroundNavbarFadeIn")
     }
 
     if (window.scrollY <= 125) {
       document.getElementById("navContainer").classList.replace("colorBackgroundNavbarFadeIn" , "colorBackgroundNavbarFadeOut")
-
+setChangeBackground(false)
       
     }
         
@@ -54,9 +55,9 @@ function IntroAnimation({ }) {
   
 
   return (
-    <div id="navContainer" className="navbarContainer">
-        <div className="nameLeft"><Typography variant="h6" style={{backgroundColor: "inherit"}}><span style={{fontWeight: "700", backgroundColor: "inherit"}}>SANTIAGO</span><span style={{fontWeight: "500", backgroundColor: "inherit"}}>ADAY</span></Typography></div>
-        <div className="namesRight">       <ul>
+    <div id="navContainer" className="navbarContainer" style={{backgroundColor: "rgba(244, 234, 227, 1)"}}>
+        <div className="nameLeft" style={{backgroundColor: "inherit"}}><Typography variant="h6" style={{backgroundColor: "inherit"}}><span style={{fontWeight: "700", backgroundColor: "inherit"}}>SANTIAGO</span><span style={{fontWeight: "500", backgroundColor: "inherit"}}>ADAY</span></Typography></div>
+        <div className="namesRight" style={{backgroundColor: "inherit"}}>       <ul>
           <li>
             <a onClick={() => handleClick(1)}>ABOUT</a>
           </li>

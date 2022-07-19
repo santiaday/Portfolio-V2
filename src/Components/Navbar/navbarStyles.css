@@ -5,23 +5,26 @@
     position: fixed;
     align-items: center;
     user-select: none;
-    background-color: transparent;
     z-index: 90;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
 }
 
 .colorBackgroundNavbarFadeIn {
   animation: backgroundColorFade 0.5s forwards;
+  backdrop-filter: blur(6px);
 }
 
 .colorBackgroundNavbarFadeOut {
   animation: backgroundColorFadeOut 0.5s forwards;
+  backdrop-filter: blur(6px);
 }
 
 @keyframes backgroundColorFadeOut {
 
 from {
-  background-color: #F4EAE3;
+  background-color: rgba(244, 234, 227, 1);
 }to {
   background-color: transparent;
 }
@@ -32,7 +35,7 @@ from {
   from {
     background-color: transparent;
   }to {
-    background-color: #F4EAE3;
+    background-color: rgba(244, 234, 227, 1);
   }
 
 }
@@ -41,27 +44,26 @@ from {
     text-decoration: none;
     color: #282c34;
     margin-left: 7rem;
-    font-weight: 500;
-    background-color: inherit;
+    backdrop-filter: blur(6px);
   }
   .namesRight {
     font-weight: 500;
     margin-left: auto;
     margin-right: 7rem;
     color: #282c34;
-    background-color: inherit;
     margin-top: 6px;
+    backdrop-filter: blur(6px);
   }
 
   .namesRight ul {
     display: flex;
-    background-color: inherit;
-
+    backdrop-filter: blur(6px);
+    background-color: transparent;
   }
   .namesRight li {
     list-style-type: none;
     margin: 0 1rem;
-    background-color: inherit;
+    background-color: transparent;
   }
   .namesRight li a {
     text-decoration: none;
@@ -69,5 +71,6 @@ from {
     color: inherit;
     display: block;
     width: 100%;
-    background-color: inherit;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
   }

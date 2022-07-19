@@ -1,6 +1,46 @@
+
+
 .aboutMePageContainer {
-    width: 100vw;
-    height: 105vh;
     background-color: #282c34;
-    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    height: 96vh;
+    width: 101vw;
 }
+
+
+.aboutMeHeader {
+    background-color: #282c34;
+    margin-top: 4vh;
+    position: absolute;
+}
+
+.aboutMeText {
+    background-color: #282c34;
+    color: #F4EAE3;
+    font-weight: 700 !important;
+}
+
+.row {
+    width: 100vw;
+    display: flex;
+    background-color: #282c34;
+    margin-top: 20vh;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .column {
+    flex: 50%;
+    justify-content: center;
+    background-color: #282c34;
+  }
+
+  .aboutMeParagraph {
+      color: #F4EAE3;
+      background-color: #282c34;
+      text-align: left;
+      margin-left: 8vw;
+      font-size: 1.25em;
+      font-weight: 600;
+  }

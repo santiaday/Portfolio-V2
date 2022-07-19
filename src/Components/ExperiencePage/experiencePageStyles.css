@@ -1,0 +1,14 @@
+.experiencePageContainer {
+    height: 100vh;
+    background-color: #F4EAE3;
+}
+
+.experienceHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: #FF6A3D;
+    color: #F4EAE3;
+}

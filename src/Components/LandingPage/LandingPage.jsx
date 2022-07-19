@@ -24,7 +24,7 @@ function IntroAnimation({}) {
           <br /> Software <br /> Engineer
         </div>
         <div class="shellClass" style={{ position: "absolute" ,pointerEvents: "none", backgroundColor:"transparent"}}>
-          <button class="btn btn-background-slide" style={{width: "250px", height: "65px", marginTop: "350px"}}><span style={{backgroundColor: "transparent", fontSize: "18px"}}>Learn More</span></button>
+          <button class="btn btn-background-slide" style={{width: "250px", height: "65px", marginTop: "40vh"}}><span style={{backgroundColor: "transparent", fontSize: "18px"}}>Learn More</span></button>
         </div>
       </div>
   );
