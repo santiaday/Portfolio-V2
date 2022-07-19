@@ -1,13 +1,40 @@
 .navbarContainer {
-    height: 6vh;
+    height: 8vh;
     width: 100%;
     display: flex;
     position: fixed;
     align-items: center;
-    background-color: transparent;
     user-select: none;
+    background-color: transparent;
     z-index: 90;
     /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
+}
+
+.colorBackgroundNavbarFadeIn {
+  animation: backgroundColorFade 0.5s forwards;
+}
+
+.colorBackgroundNavbarFadeOut {
+  animation: backgroundColorFadeOut 0.5s forwards;
+}
+
+@keyframes backgroundColorFadeOut {
+
+from {
+  background-color: #F4EAE3;
+}to {
+  background-color: transparent;
+}
+}
+
+@keyframes backgroundColorFade {
+
+  from {
+    background-color: transparent;
+  }to {
+    background-color: #F4EAE3;
+  }
+
 }
 
 .nameLeft {
@@ -15,22 +42,26 @@
     color: #282c34;
     margin-left: 7rem;
     font-weight: 500;
+    background-color: inherit;
   }
   .namesRight {
     font-weight: 500;
     margin-left: auto;
     margin-right: 7rem;
     color: #282c34;
-
+    background-color: inherit;
+    margin-top: 6px;
   }
 
   .namesRight ul {
     display: flex;
-    padding: 0;
+    background-color: inherit;
+
   }
   .namesRight li {
     list-style-type: none;
     margin: 0 1rem;
+    background-color: inherit;
   }
   .namesRight li a {
     text-decoration: none;
@@ -38,4 +69,5 @@
     color: inherit;
     display: block;
     width: 100%;
+    background-color: inherit;
   }

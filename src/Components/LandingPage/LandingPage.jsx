@@ -2,7 +2,6 @@ import useStyles from "./landingPageStyles.js";
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Typography, Button } from "@material-ui/core";
 import "./landingPageStyles.css";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function IntroAnimation({}) {
   useEffect(() => {
@@ -24,8 +23,8 @@ function IntroAnimation({}) {
           Full-Stack
           <br /> Software <br /> Engineer
         </div>
-        <div class="shellClass" style={{ position: "absolute" , bottom: "350px", pointerEvents: "none"}}>
-          <button class="btn btn-background-slide" style={{width: "250px", height: "65px"}}><span style={{backgroundColor: "transparent", fontSize: "18px"}}>Learn More</span></button>
+        <div class="shellClass" style={{ position: "absolute" ,pointerEvents: "none", backgroundColor:"transparent"}}>
+          <button class="btn btn-background-slide" style={{width: "250px", height: "65px", marginTop: "350px"}}><span style={{backgroundColor: "transparent", fontSize: "18px"}}>Learn More</span></button>
         </div>
       </div>
   );

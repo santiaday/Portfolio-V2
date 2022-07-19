@@ -2,7 +2,6 @@ import useStyles from "./introAnimationStyles.js";
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Typography, Button } from "@material-ui/core";
 import "./introAnimationStyles.css";
-import { logDOM } from "@testing-library/react";
 import logo from "../../logo.svg";
 
 function IntroAnimation({ setSplashDone }) {
