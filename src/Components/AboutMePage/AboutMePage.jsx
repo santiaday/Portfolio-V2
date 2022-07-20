@@ -26,7 +26,7 @@ function AboutMePage({}) {
       className="aboutMePageContainer"
       style={{
         position: "aboslute",
-        transform: `translateY(-${offsetY * 1.5}px)`,
+        transform: `translateY(-${offsetY}px)`,
         zIndex: 95,
       }}
     >

@@ -6,39 +6,40 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
+import data from "./experience.json"
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-  
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`vertical-tabpanel-${index}`}
-        aria-labelledby={`vertical-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-  
-  TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `vertical-tab-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
   };
-  
-  function a11yProps(index) {
-    return {
-      id: `vertical-tab-${index}`,
-      'aria-controls': `vertical-tabpanel-${index}`,
-    };
-  }
+}
 
 function ExperiencePage({}) {
 
@@ -63,7 +64,7 @@ function ExperiencePage({}) {
       className="experiencePageContainer"
       style={{
         position: "aboslute",
-        transform: `translateY(-${offsetY * 1.5}px)`,
+        transform: `translateY(-${offsetY}px)`,
         zIndex: 95,
       }}
     >
@@ -91,47 +92,43 @@ function ExperiencePage({}) {
   </TimelineItem>
 </Timeline> */}
 
+<div className="experienceTabsContainer">
+<div className="experienceTabsShell">
 <Box
-      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
+      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: "60vh" , width: "50%" }}
     >
       <Tabs
         orientation="vertical"
-        variant="scrollable"
+        centered
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        <Tab label="Item One" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
-        <Tab label="Item Three" {...a11yProps(2)} />
-        <Tab label="Item Four" {...a11yProps(3)} />
-        <Tab label="Item Five" {...a11yProps(4)} />
-        <Tab label="Item Six" {...a11yProps(5)} />
-        <Tab label="Item Seven" {...a11yProps(6)} />
+        <Tab label="Expedia Group" {...a11yProps(0)} />
+        <Tab label="FIU SCIS" {...a11yProps(1)} />
+        <Tab label="DoorLoop" {...a11yProps(2)} />
+        <Tab label="FIU ECE" {...a11yProps(3)} />
+        <Tab label="Town Of Cutler Bay" {...a11yProps(4)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+        Expedia Group
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        FIU SCIS
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        DoorLoop
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        FIU ECE
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
+        Town Of Cutler Bay
       </TabPanel>
     </Box>
+    </div>
+    </div>
     </div>
   );
 }

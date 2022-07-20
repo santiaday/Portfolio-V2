@@ -1,5 +1,6 @@
 .experiencePageContainer {
     height: 100vh;
+    width: 100vw;
     background-color: #F4EAE3;
 }
 
@@ -11,4 +12,63 @@
     height: 20vh;
     background-color: #FF6A3D;
     color: #F4EAE3;
+}
+
+.experienceTabsContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experienceTabsShell {
+    width: 60vw;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-vj4oqr {
+    background-color: #F4EAE3 !important;
+}
+
+.css-lfwcke-MuiTabs-flexContainer {
+    color: black !important;
+}
+
+.css-8je8zh-MuiTouchRipple-root {
+    background-color: transparent !important;
+}
+
+.css-lfwcke-MuiTabs-flexContainer {
+    background-color: transparent !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #282C34 !important;
+    font-size: 30px !important;
+}
+
+.css-10d9dml-MuiTabs-indicator {
+    background-color: #282C34 !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    font-size: 25px !important;
+    max-width: 20vw !important;
+    min-width: 20vw !important;
+    padding: 50px 50px !important;
+}
+
+.css-1cgx7kx-MuiTabs-scroller {
+    width: 20vw !important;
+}
+
+.css-35zqo5-MuiTabs-root {
+    height: 51.5vh !important;
+}
+
+.css-8je8zh-MuiTouchRipple-root {
+    display: none !important;
 }

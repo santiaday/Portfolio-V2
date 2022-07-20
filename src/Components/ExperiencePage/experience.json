@@ -1,0 +1,65 @@
+[
+{
+    "company": "Expedia Group",
+    "position": "Full-Stack Software Engineer Intern",
+    "startDate": "May 2022",
+    "endDate": "August 2022",
+    "location": "Seattle, WA",
+    "description": [
+        "Contributed to the building and implementing of frontend and backend systems using technologies like SpringBoot, AWS, and React.",
+        "Stayed up to date with current technologies used in the company and collaborated with my team to spearhead the development of payment gateways and distribution systems.",
+        "Used technologies like GitHub, Confluence, Jenkins, Spinnaker, Docker, and Jira as well as the SCRUM management framework to continuously develop, check, and deliver production code in an easy and efficient manner.",
+        "Assisted in the development of a distribution system to efficiently deliver payments to third-party vendors and individuals working with the company."
+    ] 
+},
+{
+    "company": "FIU School Of Computing & Information Sciences",
+    "position": "Junior Web Developer / Webmaster",
+    "startDate": "May 2021",
+    "endDate": "June 2022",
+    "location": "Miami, FL",
+    "description": [
+        "Provided front-end website development using WordPress and other editing and design software.",
+        "Oversaw technical issues and troubleshooting requests to resolve surfaced problems.",
+        "Designed, implemented, and monitored web pages, plugins, and functionality for continuous improvement. Applied knowledge of JavaScript and Object-Oriented Programming to create successful designs."
+    ] 
+},
+{
+    "company": "DoorLoop",
+    "position": "Software Content Marketer",
+    "startDate": "June 2021",
+    "endDate": "June 2022",
+    "location": "Miami, FL",
+    "description": [
+        "Specialized in various functions of the company, including search engine optimization, graphic design, editing, and social media marketing.",
+        "Utilized software including Figma, StoryChief, Adobe Illustrator, and Webflow to maximize exposure of the company’s services to the public.",
+        "Collaborated with a group of motivated team members on other projects pertaining to the same field."
+    ] 
+},
+{
+    "company": "FIU College Of Engineering & Computer",
+    "position": "IT Technician",
+    "startDate": "January 2021",
+    "endDate": "May 2021",
+    "location": "Miami, FL",
+    "description": [
+        "Responsible for the smooth performance of all technical systems on campus, including hardware, software, and networks.",
+        "Troubleshooted various problems ranging in complexity in order to provide a solution in a timely manner.",
+        "Worked in a hectic, high call volume position where multiple tasks would be handled at the same time.",
+        "Worked with a small team to provide technical support to a college with a large population of engineering and computing students and researchers."
+    ] 
+},
+{
+    "company": "Town Of Cutler Bay",
+    "position": "Executive Inter",
+    "startDate": "August 2019",
+    "endDate": "March 2020",
+    "location": "Miami, FL",
+    "description": [
+        "Collaborated with colleagues on the improvement of administrative systems, produced professional reports and presentations, and collected and analyzed data from clients.",
+        "Provided beneficial administrative support to the Office Managers with any clerical tasks as required.",
+        "Assisted in event planning and management, worked closely with the Marketing teams, and maintained documents and records.",
+        "Coordinated weekly schedules for more than 10 employees, answered the phone, responded to emails, and greeted visiting clients."
+    ] 
+}
+]
