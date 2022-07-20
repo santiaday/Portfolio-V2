@@ -24,14 +24,14 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-        {!splashDone ? (
+        {/* {!splashDone ? (
           <IntroAnimation
             setSplashDone={setSplashDone}
             style={{ zIndex: "100" }}
           />
         ) : (
           <></>
-        )}
+        )} */}
 
         <Navbar style={{ position: "fixed" }} />
             <LandingPage />
