@@ -5,10 +5,12 @@ import Navbar from "./Components/Navbar/Navbar";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import AboutMePage from "./Components/AboutMePage/AboutMePage"
 import ExperiencePage from "./Components/ExperiencePage/ExperiencePage"
+import Contact from "./Components/Contact/Contact";
 
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
+import Projects from "./Components/Projects/Projects"
 
 const theme = createTheme({
   typography: {
@@ -38,19 +40,11 @@ function App() {
 
             <AboutMePage />
             <ExperiencePage />
+            <Projects />
+            <Contact />
+
     </ThemeProvider>
 
-    // <section className="Parallax">
-    //   <div
-    //     className="Parallax__background"
-    //     style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
-    //   />
-    //   <div
-    //     className="Parallax__background-triangles"
-    //     style={{ transform: `translateY(${offsetY * 0.8}px)` }}
-    //   />
-    //   <div className="Parallax__content">{renderContent()}</div>
-    // </section>
   );
 }
 

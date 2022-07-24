@@ -1,20 +1,20 @@
-.experiencePageContainer {
+.contactPageContainer {
     height: 125vh;
     width: 100vw;
-    background-color: #F4EAE3;
+    background-color: #282C34;
 }
 
-.experienceHeaderContainer {
+.contactHeaderContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 20vh;
-    background-color: #FF6A3D;
-    color: #F4EAE3;
+    background-color:#F4EAE3;
+    color: #282C34;
 }
 
-.experienceTabsContainer {
+.containerTabsContainer {
     width: 100vw;
     display: flex;
     justify-content: center;

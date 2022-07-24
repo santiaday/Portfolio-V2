@@ -26,14 +26,14 @@
 from {
   background-color: rgba(244, 234, 227, 1);
 }to {
-  background-color: transparent;
+  background-color: rgba(244, 234, 227, 0.6);
 }
 }
 
 @keyframes backgroundColorFade {
 
   from {
-    background-color: transparent;
+    background-color: rgba(244, 234, 227, 0.6);
   }to {
     background-color: rgba(244, 234, 227, 1);
   }
@@ -44,7 +44,6 @@ from {
     text-decoration: none;
     color: #282c34;
     margin-left: 7rem;
-    backdrop-filter: blur(6px);
   }
   .namesRight {
     font-weight: 500;
@@ -52,18 +51,14 @@ from {
     margin-right: 7rem;
     color: #282c34;
     margin-top: 6px;
-    backdrop-filter: blur(6px);
   }
 
   .namesRight ul {
     display: flex;
-    backdrop-filter: blur(6px);
-    background-color: transparent;
   }
   .namesRight li {
     list-style-type: none;
     margin: 0 1rem;
-    background-color: transparent;
   }
   .namesRight li a {
     text-decoration: none;
@@ -71,6 +66,4 @@ from {
     color: inherit;
     display: block;
     width: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(6px);
   }

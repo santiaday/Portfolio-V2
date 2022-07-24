@@ -26,7 +26,6 @@ function AboutMePage({}) {
       className="aboutMePageContainer"
       style={{
         position: "aboslute",
-        transform: `translateY(-${offsetY}px)`,
         zIndex: 95,
       }}
     >
@@ -51,7 +50,7 @@ I have maintained very high honors throughout my college career, holding onto a 
         </div>
         <div class="column">
         <div className="container">
-        <h1 style={{color: "#F4EAE3"}}>Technologies</h1>
+        <h1 style={{color: "#F4EAE3", fontSize: "5vh"}}>Technologies</h1>
         <div className="progressbar-container">
             
           <div className="progressbar-complete" style={{width: "85%"}}>

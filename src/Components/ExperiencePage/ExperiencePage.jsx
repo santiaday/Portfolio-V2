@@ -7,9 +7,11 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
 import data from "./experience.json"
+import PositionComponent from "./PositionComponent/PositionComponent"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+  console.log(data)
 
   return (
     <div
@@ -42,13 +44,6 @@ function a11yProps(index) {
 }
 
 function ExperiencePage({}) {
-
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-    }, []);
   
     const [value, setValue] = React.useState(0);
 
@@ -64,7 +59,6 @@ function ExperiencePage({}) {
       className="experiencePageContainer"
       style={{
         position: "aboslute",
-        transform: `translateY(-${offsetY}px)`,
         zIndex: 95,
       }}
     >
@@ -76,21 +70,6 @@ function ExperiencePage({}) {
           Experience
         </Typography>
       </div>
-      {/* <Timeline style={{marginTop: "60px"}} >
-  <TimelineItem>
-    <TimelineSeparator>
-      <TimelineDot sx={{borderColor: "#282c34"}} variant="outlined"/>
-      <TimelineConnector />
-    </TimelineSeparator>
-    <TimelineContent>Secondary</TimelineContent>
-  </TimelineItem>
-  <TimelineItem>
-    <TimelineSeparator>
-      <TimelineDot sx={{borderColor: "#282c34"}} variant="outlined"/>
-    </TimelineSeparator>
-    <TimelineContent>Success</TimelineContent>
-  </TimelineItem>
-</Timeline> */}
 
 <div className="experienceTabsContainer">
 <div className="experienceTabsShell">
@@ -111,20 +90,20 @@ function ExperiencePage({}) {
         <Tab label="FIU ECE" {...a11yProps(3)} />
         <Tab label="Town Of Cutler Bay" {...a11yProps(4)} />
       </Tabs>
-      <TabPanel value={value} index={0}>
-        Expedia Group
+        <TabPanel value={value} index={0}>
+        <PositionComponent position={data[0]}/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        FIU SCIS
+      <PositionComponent position={data[1]}/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        DoorLoop
+      <PositionComponent position={data[2]}/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        FIU ECE
+      <PositionComponent position={data[3]}/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Town Of Cutler Bay
+      <PositionComponent position={data[4]}/>
       </TabPanel>
     </Box>
     </div>

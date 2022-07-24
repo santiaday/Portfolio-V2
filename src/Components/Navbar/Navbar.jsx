@@ -8,29 +8,6 @@ function IntroAnimation({ }) {
 
   const [changeBackground, setChangeBackground] = useState(false)
 
-  useEffect(() => {
-    window.addEventListener('scroll', pop);
-  
-    return () => window.removeEventListener('scroll', pop);
-  },[]);
-
-  const pop = () => {
-    if (window.scrollY >= 125) {
-      setChangeBackground(true)
-      document.getElementById("navContainer").classList.replace("colorBackgroundNavbarFadeOut" , "colorBackgroundNavbarFadeIn")
-    }
-
-    if (window.scrollY <= 125) {
-      document.getElementById("navContainer").classList.replace("colorBackgroundNavbarFadeIn" , "colorBackgroundNavbarFadeOut")
-setChangeBackground(false)
-      
-    }
-        
-    console.log(window.scrollY)
-  }
-
-
-
 
   const classes = useStyles();
 
@@ -55,9 +32,9 @@ setChangeBackground(false)
   
 
   return (
-    <div id="navContainer" className="navbarContainer" style={{backgroundColor: "rgba(244, 234, 227, 1)"}}>
-        <div className="nameLeft" style={{backgroundColor: "inherit"}}><Typography variant="h6" style={{backgroundColor: "inherit"}}><span style={{fontWeight: "700", backgroundColor: "inherit"}}>SANTIAGO</span><span style={{fontWeight: "500", backgroundColor: "inherit"}}>ADAY</span></Typography></div>
-        <div className="namesRight" style={{backgroundColor: "inherit"}}>       <ul>
+    <div id="navContainer" className= {!changeBackground ? "navbarContainer colorBackgroundNavbarFadeOut" : "navbarContainer colorBackgroundNavbarFadeIn"} onMouseOver={() => setChangeBackground(true)} onMouseLeave={() => setChangeBackground(false)} >
+        <div className="nameLeft" style={{fontWeight: "700"}}><Typography variant="h6" style={{fontWeight: "700"}}><span style={{fontWeight: "700"}}>SANTIAGO</span><span style={{fontWeight: "500"}}>ADAY</span></Typography></div>
+        <div className="namesRight" style={{background: "transparent"}}>       <ul>
           <li>
             <a onClick={() => handleClick(1)}>ABOUT</a>
           </li>
@@ -71,10 +48,10 @@ setChangeBackground(false)
             <a onClick={() => handleClick(4)}>CONTACT</a>
           </li>
           <li>
-            <a href="https://github.com/santiaday" target="_blank"><BsGithub style={{fontSize: "1.3rem", backgroundColor: "inherit"}}/></a>
+            <a href="https://github.com/santiaday" target="_blank"><BsGithub style={{fontSize: "1.3rem", backgroundColor: "transparent"}}/></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/santiagoaday/" target="_blank"><BsLinkedin style={{fontSize: "1.3rem" , backgroundColor: "inherit"}} /></a>
+            <a href="https://www.linkedin.com/in/santiagoaday/" target="_blank"><BsLinkedin style={{fontSize: "1.3rem" , backgroundColor: "transparent"}} /></a>
           </li>
         </ul></div>
     </div>

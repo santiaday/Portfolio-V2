@@ -1,0 +1,19 @@
+.positionCompany {
+    font-size: 2.8vw !important;
+    font-weight: 600 !important;
+    text-decoration: underline;
+    text-decoration-color: #FF6A3D;
+}
+
+.positionLocation {
+    font-size: 1.7vw !important;
+    font-weight: 500 !important;
+    margin-top: 5px !important;
+    margin-bottom: 30px !important;
+}
+
+.descriptionText {
+    font-size: 1.4vw !important;
+    font-weight: 300 !important;
+    margin-top: 15px !important;
+}
