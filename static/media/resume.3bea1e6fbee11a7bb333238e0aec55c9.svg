@@ -1,0 +1,21 @@
+<div>
+<style type="text/css">
+
+        
+
+
+        .navbar-svg-hover:hover path {
+            fill: #FFFFFF;
+            transition: all 0.2s;
+        }
+
+.navbar-svg-hover path {
+
+            transition: all 0.2s;
+        }
+    </style>
+
+<svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.4464 6.11L14.7191 0.538571L13.3636 0H1.90909L0 1.85714V24.1429L1.90909 26H19.0909L21 24.1429V7.42857L20.4464 6.11ZM19.0909 24.1429H1.90909V1.85714H11.4545V9.28571H19.0909V24.1429ZM13.3636 7.42857V1.85714L19.0909 7.42857H13.3636Z" fill="#848383"/>
+</svg>
+</div>

@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.db4c5483.css",
+    "main.js": "/static/js/main.d6fd896e.js",
+    "static/media/excellent_store.png": "/static/media/excellent_store.d178334ccb13c9b95deb.png",
+    "static/media/splashpage_image.png": "/static/media/splashpage_image.8a492b11465819c12ebb.png",
+    "static/media/crawlerio.png": "/static/media/crawlerio.bd588dee1c404ced90a7.png",
+    "static/media/doorloop_blog.png": "/static/media/doorloop_blog.3446e911a8a5725da5de.png",
+    "static/media/typing_test.png": "/static/media/typing_test.439f9a1f2518e00ad65d.png",
+    "static/media/santi_logo.png": "/static/media/santi_logo.bc63fe494c662434d831.png",
+    "static/media/json_file_manager.png": "/static/media/json_file_manager.b785088a5350a3fdeec7.png",
+    "static/media/real-estate-ai.png": "/static/media/real-estate-ai.68e7c98559de9aa87af5.png",
+    "static/media/calculators.jpg": "/static/media/calculators.9f17f7b3cd5a5151c948.jpg",
+    "static/media/custom-quiz.png": "/static/media/custom-quiz.77fb9ee5d2794c2c256b.png",
+    "static/media/blue_obj.png": "/static/media/blue_obj.7a87cd51cb9dfecc833d.png",
+    "static/media/greentree.png": "/static/media/greentree.7a82758b79c2f0d344db.png",
+    "static/media/orange_obj.png": "/static/media/orange_obj.ef47054978b447ed647a.png",
+    "static/media/github_icon.svg": "/static/media/github_icon.af72328efc7830fbd35a6b0cb63eddc2.svg",
+    "static/media/footer_icon.svg": "/static/media/footer_icon.67060ba418f496b55a5e4b6b601fbbe4.svg",
+    "static/media/github.svg": "/static/media/github.b979a53edf257a0a74457ac9e4de3470.svg",
+    "static/media/email_icon.svg": "/static/media/email_icon.203ed22fdbfc3ce5b4fa87e15ef4caa5.svg",
+    "static/media/marketing_specialist_icon.svg": "/static/media/marketing_specialist_icon.81d44da67ad09a86ec6dd2c344bccc75.svg",
+    "static/media/linkedin_footer.svg": "/static/media/linkedin_footer.25ff0594cb2935cfade30464ab052081.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.507a2a746d1afd01627d9573354a6e5c.svg",
+    "static/media/software_engineer_icon.svg": "/static/media/software_engineer_icon.1cb58a542f13d05df75026bdc18b742d.svg",
+    "static/media/resume.svg": "/static/media/resume.3bea1e6fbee11a7bb333238e0aec55c9.svg",
+    "static/media/content_writer_icon.svg": "/static/media/content_writer_icon.732a30f89d89ccea4551065d32171281.svg",
+    "main.db4c5483.css.map": "/static/css/main.db4c5483.css.map",
+    "main.d6fd896e.js.map": "/static/js/main.d6fd896e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db4c5483.css",
+    "static/js/main.d6fd896e.js"
+  ]
+}
